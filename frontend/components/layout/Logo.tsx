@@ -7,12 +7,14 @@ interface LogoProps {
   className?: string;
   /** Aria etiketi için işletme adı. Belirtilmezse statik varsayılan kullanılır. */
   siteName?: string;
+  onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export function Logo({ className, siteName = defaultSiteConfig.name }: LogoProps) {
+export function Logo({ className, siteName = defaultSiteConfig.name, onClick }: LogoProps) {
   return (
     <Link
       href="/"
+      onClick={onClick}
       className={cn(
         "group flex items-center gap-2.5 font-display uppercase leading-none tracking-wider text-optic",
         className,

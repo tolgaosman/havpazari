@@ -39,7 +39,7 @@ export function CategoryGrid({ categories }: CategoryGridProps) {
             >
               <Link
                 href={`/magaza?kategori=${category.slug}`}
-                className="relative flex h-full min-h-[16rem] flex-col justify-end p-6 focus-visible:outline-none sm:min-h-[20rem]"
+                className="relative flex h-full min-h-[16rem] flex-col justify-end p-6 sm:min-h-[20rem]"
               >
                 <Image
                   src={category.imageUrl}

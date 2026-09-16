@@ -46,6 +46,12 @@ export function Navbar({ categories, settings }: NavbarProps) {
     lastScrollY.current = latest;
   });
 
+  function scrollToTopIfHome(event: React.MouseEvent<HTMLAnchorElement>) {
+    if (!isHome) return;
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   const solid = scrolled || !isHome || mobileOpen || searchOpen;
   const navLinks: NavLink[] = [
     { label: "Ana Sayfa", href: "/" },
@@ -80,16 +86,17 @@ export function Navbar({ categories, settings }: NavbarProps) {
             : "border-b border-transparent bg-gradient-to-b from-obsidian/70 via-obsidian/20 to-transparent",
         )}
       >
-        <div className="container-page flex h-20 items-center justify-between gap-4">
-          <Logo siteName={settings.name} />
+        <div className="container-page relative flex h-20 items-center justify-between gap-4">
+          <Logo siteName={settings.name} onClick={scrollToTopIfHome} />
 
-          <nav aria-label="Birincil gezinme" className="hidden lg:block">
-            <ul className="flex items-center gap-1">
+          <nav aria-label="Birincil gezinme" className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 lg:block">
+            <ul className="flex items-center justify-center gap-0.5 xl:gap-1">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="block rounded px-3 py-2 font-display text-sm font-semibold uppercase tracking-wide text-ash transition-colors duration-200 hover:text-optic"
+                    onClick={link.href === "/" ? scrollToTopIfHome : undefined}
+                    className="block whitespace-nowrap rounded px-2 py-2 font-display text-xs font-semibold uppercase tracking-wide text-ash transition-colors duration-200 hover:text-optic xl:px-3 xl:text-sm"
                   >
                     {link.label}
                   </Link>
@@ -98,7 +105,7 @@ export function Navbar({ categories, settings }: NavbarProps) {
             </ul>
           </nav>
 
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="absolute right-5 top-1/2 flex shrink-0 -translate-y-1/2 items-center gap-1.5 sm:right-8 sm:gap-2">
             <button
               type="button"
               onClick={() => setSearchOpen((open) => !open)}
@@ -148,6 +155,7 @@ export function Navbar({ categories, settings }: NavbarProps) {
         onClose={() => setMobileOpen(false)}
         navLinks={navLinks}
         settings={settings}
+        isHome={isHome}
       />
     </>
   );

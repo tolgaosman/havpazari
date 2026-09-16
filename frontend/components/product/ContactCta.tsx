@@ -1,5 +1,6 @@
-import { MapPin, MessageCircle, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { directionsHref, telHref, whatsappHref, type SiteConfig } from "@/lib/site";
+import { WhatsAppGlyph } from "@/components/layout/SocialGlyphs";
 
 interface ContactCtaProps {
   productName: string;
@@ -26,7 +27,7 @@ export function ContactCta({ productName, sku, settings }: ContactCtaProps) {
         rel="noopener noreferrer"
         className="flex h-12 flex-1 items-center justify-center gap-2 rounded-full border border-steel px-6 font-display text-sm font-bold uppercase tracking-wide text-optic transition-colors duration-200 hover:border-brass hover:text-brass"
       >
-        <MessageCircle className="size-4" />
+        <WhatsAppGlyph className="size-4" />
         WhatsApp&apos;tan Sor
       </a>
       <a

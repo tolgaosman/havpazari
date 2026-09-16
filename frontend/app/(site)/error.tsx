@@ -22,7 +22,7 @@ export default function ErrorBoundary({
   }, [error]);
 
   return (
-    <div className="container-page flex min-h-[70vh] flex-col items-center justify-center gap-6 pb-24 pt-32 text-center">
+    <div className="container-page flex min-h-[70dvh] flex-col items-center justify-center gap-6 pb-24 pt-32 text-center">
       <TriangleAlert className="size-12 text-blaze" aria-hidden="true" strokeWidth={1.5} />
       <div>
         <h1 className="text-display-md font-bold uppercase text-optic">Bir Şeyler Ters Gitti</h1>

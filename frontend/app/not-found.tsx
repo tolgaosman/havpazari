@@ -13,7 +13,7 @@ export default async function NotFound() {
 
   return (
     <SiteChrome categories={categories} settings={settings}>
-      <div className="container-page flex min-h-[70vh] flex-col items-center justify-center gap-6 pb-24 pt-32 text-center">
+      <div className="container-page flex min-h-[70dvh] flex-col items-center justify-center gap-6 pb-24 pt-32 text-center">
         <Compass className="size-12 text-brass" aria-hidden="true" strokeWidth={1.5} />
         <div>
           <p className="font-mono text-sm uppercase tracking-[0.3em] text-ash-dim">Hata 404</p>

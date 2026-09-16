@@ -28,11 +28,17 @@ export async function generateMetadata({ searchParams }: ShopPageProps): Promise
 
   const title = category ? category.name : query.q ? `"${query.q}" için sonuçlar` : "Mağaza";
 
+  // Sıralama/sayfa/arama gibi gürültülü parametreler indekslenebilir yinelenen
+  // içerik üretir; kategori gerçek bir alt küme olduğu için korunuyor, geri
+  // kalanı temel `/magaza`'ya yönlendiriliyor.
+  const canonical = query.category ? `/magaza?kategori=${query.category}` : "/magaza";
+
   return {
     title,
     description:
       category?.description ??
       "Tüfek, optik, taktik giyim, kamp ve av aksesuarları — tüm ürünlerimiz.",
+    alternates: { canonical },
   };
 }
 

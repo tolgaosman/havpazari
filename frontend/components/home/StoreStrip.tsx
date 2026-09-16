@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { MapPin, MessageCircle, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
+import { WhatsAppGlyph } from "@/components/layout/SocialGlyphs";
 import { editorialImages } from "@/lib/mockData";
 import {
   directionsHref,
@@ -83,7 +84,7 @@ export function StoreStrip({ settings }: { settings: SiteConfig }) {
               rel="noopener noreferrer"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-steel px-6 font-display text-sm font-bold uppercase tracking-wide text-optic transition-colors duration-200 hover:border-brass hover:text-brass"
             >
-              <MessageCircle className="size-4" />
+              <WhatsAppGlyph className="size-4" />
               WhatsApp
             </a>
             <a

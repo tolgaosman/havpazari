@@ -89,12 +89,12 @@ export const defaultSiteConfig: SiteConfig = {
   },
 
   openingHours: [
-    { schemaDay: "Mo", label: "Pazartesi", opens: "08:30", closes: "18:30" },
-    { schemaDay: "Tu", label: "Salı", opens: "08:30", closes: "18:30" },
-    { schemaDay: "We", label: "Çarşamba", opens: "08:30", closes: "18:30" },
-    { schemaDay: "Th", label: "Perşembe", opens: "08:30", closes: "18:30" },
-    { schemaDay: "Fr", label: "Cuma", opens: "08:30", closes: "18:30" },
-    { schemaDay: "Sa", label: "Cumartesi", opens: "08:30", closes: "16:00" },
+    { schemaDay: "Mo", label: "Pazartesi", opens: "09:30", closes: "18:00" },
+    { schemaDay: "Tu", label: "Salı", opens: "09:30", closes: "18:00" },
+    { schemaDay: "We", label: "Çarşamba", opens: "09:30", closes: "18:00" },
+    { schemaDay: "Th", label: "Perşembe", opens: "09:30", closes: "18:00" },
+    { schemaDay: "Fr", label: "Cuma", opens: "09:30", closes: "18:00" },
+    { schemaDay: "Sa", label: "Cumartesi", opens: "09:30", closes: "18:00" },
     { schemaDay: "Su", label: "Pazar", opens: null, closes: null },
   ],
 

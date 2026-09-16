@@ -11,6 +11,7 @@ import { defaultSiteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Hakkımızda",
   description: `${defaultSiteConfig.name} — Düzova'da yılların verdiği tecrübeyle av ve outdoor ekipmanı.`,
+  alternates: { canonical: "/hakkimizda" },
 };
 
 const values = [

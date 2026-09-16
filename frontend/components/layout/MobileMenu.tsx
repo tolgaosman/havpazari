@@ -13,12 +13,13 @@ interface MobileMenuProps {
   onClose: () => void;
   navLinks: NavLink[];
   settings: SiteConfig;
+  isHome: boolean;
 }
 
 const FOCUSABLE_SELECTOR =
   'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
-export function MobileMenu({ open, onClose, navLinks, settings }: MobileMenuProps) {
+export function MobileMenu({ open, onClose, navLinks, settings, isHome }: MobileMenuProps) {
   const panelRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -102,7 +103,13 @@ export function MobileMenu({ open, onClose, navLinks, settings }: MobileMenuProp
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      onClick={onClose}
+                      onClick={(event) => {
+                        onClose();
+                        if (link.href === "/" && isHome) {
+                          event.preventDefault();
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }
+                      }}
                       className="block border-b border-steel py-4 font-display text-xl font-bold uppercase tracking-wide text-optic transition-colors duration-200 hover:text-brass"
                     >
                       {link.label}

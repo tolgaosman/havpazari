@@ -14,7 +14,7 @@ export default function AdminLoginPage() {
   const [state, formAction] = useActionState(login, initialState);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-obsidian px-4 py-12">
+    <div className="flex min-h-dvh items-center justify-center bg-obsidian px-4 py-12">
       <div className="w-full max-w-sm">
         <div className="flex flex-col items-center gap-2 text-center">
           <Crosshair className="size-8 text-brass" strokeWidth={1.75} aria-hidden="true" />

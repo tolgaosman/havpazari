@@ -35,7 +35,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen bg-obsidian text-optic lg:flex">
+    <div className="min-h-dvh bg-obsidian text-optic lg:flex">
       {/* Masaüstü kenar çubuğu */}
       <aside className="hidden w-60 shrink-0 border-r border-steel bg-charcoal lg:flex lg:flex-col">
         <SidebarContent pathname={pathname} isActive={isActive} onNavigate={() => {}} />

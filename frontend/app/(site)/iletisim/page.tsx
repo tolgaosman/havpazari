@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { MapPin, MessageCircle, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
-import { FacebookGlyph } from "@/components/layout/SocialGlyphs";
+import { MapEmbed } from "@/components/layout/MapEmbed";
+import { FacebookGlyph, WhatsAppGlyph } from "@/components/layout/SocialGlyphs";
 import { getSiteSettings } from "@/lib/api";
 import {
   directionsHref,
@@ -15,6 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "İletişim",
   description: `${defaultSiteConfig.name} adres, telefon ve çalışma saatleri — Düzova, KKTC.`,
+  alternates: { canonical: "/iletisim" },
 };
 
 export default async function ContactPage() {
@@ -65,7 +67,7 @@ export default async function ContactPage() {
             </a>
           </ContactRow>
 
-          <ContactRow icon={MessageCircle} label="WhatsApp">
+          <ContactRow icon={WhatsAppGlyph} label="WhatsApp">
             <a
               href={whatsappHref(settings, "Merhaba, bir sorum vardı.")}
               target="_blank"
@@ -91,11 +93,9 @@ export default async function ContactPage() {
         </Reveal>
 
         <Reveal immediate delay={0.1} className="min-h-[24rem] overflow-hidden rounded-lg border border-steel lg:min-h-0">
-          <iframe
+          <MapEmbed
             src={mapEmbedSrc(settings)}
             title={`${settings.name} konumu`}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
             className="size-full min-h-[24rem] grayscale-[20%] lg:min-h-full"
           />
         </Reveal>
@@ -119,9 +119,11 @@ function ContactRow({
         <Icon className="size-4" aria-hidden={true} />
       </span>
       <div>
-        <h2 className="font-display text-xs font-bold uppercase tracking-[0.2em] text-optic">
+        {/* Alan etiketi — gerçek bir bölüm başlığı değil, `<h2>` yerine
+            görsel olarak aynı ama başlık ağacına gürültü katmayan bir `<p>`. */}
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-optic">
           {label}
-        </h2>
+        </p>
         <div className="mt-1 text-sm text-ash">{children}</div>
       </div>
     </div>

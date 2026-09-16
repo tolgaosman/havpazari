@@ -29,10 +29,7 @@ export function ProductCard({ product, priority = false, className }: ProductCar
       transition={snappy}
       className={cn("group relative flex flex-col", className)}
     >
-      <Link
-        href={`/urun/${product.slug}`}
-        className="flex flex-col focus-visible:outline-none"
-      >
+      <Link href={`/urun/${product.slug}`} className="flex flex-col">
         <div className="relative aspect-[4/5] overflow-hidden rounded-md border border-steel bg-charcoal transition-colors duration-300 group-hover:border-brass group-focus-visible:border-brass">
           {cover && (
             <Image

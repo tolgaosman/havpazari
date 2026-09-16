@@ -48,6 +48,9 @@ export const metadata: Metadata = {
     "dürbün",
   ],
   authors: [{ name: defaultSiteConfig.name }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "tr_TR",
@@ -56,10 +59,13 @@ export const metadata: Metadata = {
     title: `${defaultSiteConfig.name} — ${defaultSiteConfig.tagline}`,
     description: defaultSiteConfig.description,
   },
-  icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg",
+  twitter: {
+    card: "summary_large_image",
+    title: `${defaultSiteConfig.name} — ${defaultSiteConfig.tagline}`,
+    description: defaultSiteConfig.description,
   },
+  // `icon.svg` ve `apple-icon.tsx` dosya kuralı üzerinden otomatik eklenir
+  // (bkz. app/apple-icon.tsx) — burada elle tekrar tanımlamaya gerek yok.
   robots: {
     index: true,
     follow: true,
