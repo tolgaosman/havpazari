@@ -1,0 +1,229 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Hasan Av Dünyası — tasarım token'ları
+
+   Tailwind v4 CSS-first yapılandırma kullanıyor: tailwind.config.ts yok,
+   tüm tasarım kararları burada `@theme` içinde yaşıyor.
+
+   Palet kuralı: saf #000 / #fff yok. Zeminler askeri yeşil ve kahverengiye
+   çalan sıcak bir karartma kullanır (soğuk gri-siyah değil) — av dükkanı
+   hissi, hayatta kalma/taktik hissi değil. Aksan rengi haki-pirinç (fişek
+   kovanı), ikincil aksan koyu askeri yeşil, uyarı rengi av güvenlik
+   turuncusu.
+   ========================================================================== */
+
+@theme {
+  /* --- Yüzeyler (koyudan açığa) — sıcak zeytin-kahve karartma --- */
+  --color-obsidian: #100f0a; /* sayfa zemini */
+  --color-charcoal: #1a170f; /* bölüm / kart zemini */
+  --color-gunmetal: #241f14; /* yükseltilmiş yüzey, hover zemini */
+  --color-steel: #3a3320; /* kenarlık */
+  --color-steel-bright: #4f452c; /* hover kenarlığı */
+
+  /* --- Metin --- */
+  --color-optic: #f2ede0; /* birincil metin  — obsidian üzerinde ~17:1 */
+  --color-ash: #a89e87; /* ikincil metin   — obsidian üzerinde  ~7.3:1 */
+  --color-ash-dim: #7d735a; /* üçüncül / pasif — yalnızca büyük metinde */
+
+  /* --- Aksan --- */
+  --color-brass: #ad8a4e; /* CTA, focus ring (haki-pirinç) — obsidian üzerinde ~7:1 */
+  --color-brass-bright: #c7a468; /* hover */
+  --color-moss: #55603e; /* koyu askeri yeşil — ikincil aksan, kategori etiketi */
+  --color-blaze: #d9541e; /* rozet: yeni / son adet (av güvenlik turuncusu) */
+
+  /* --- Durum --- */
+  --color-stock-in: #6f9a5e;
+  --color-stock-low: #d9a03a;
+  --color-stock-out: #8a5a5a;
+
+  /* --- Tipografi ---
+     Değişkenler app/layout.tsx içinde next/font tarafından tanımlanıyor. */
+  --font-display: var(--font-barlow-condensed), "Arial Narrow", ui-sans-serif,
+    system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "Cascadia Mono",
+    "Consolas", monospace;
+
+  /* Akışkan başlık ölçeği — her biri clamp() ile viewport'a göre ölçekleniyor,
+     böylece 390px ile 1920px arasında ayrı breakpoint'e gerek kalmıyor. */
+  --text-display-xl: clamp(2.75rem, 1.35rem + 6vw, 6rem);
+  --text-display-xl--line-height: 0.92;
+  --text-display-xl--letter-spacing: 0.01em;
+
+  --text-display-lg: clamp(2.25rem, 1.5rem + 3.4vw, 4.25rem);
+  --text-display-lg--line-height: 0.95;
+  --text-display-lg--letter-spacing: 0.015em;
+
+  --text-display-md: clamp(1.75rem, 1.35rem + 1.9vw, 2.75rem);
+  --text-display-md--line-height: 1;
+  --text-display-md--letter-spacing: 0.02em;
+
+  --text-display-sm: clamp(1.375rem, 1.2rem + 0.8vw, 1.75rem);
+  --text-display-sm--line-height: 1.1;
+  --text-display-sm--letter-spacing: 0.03em;
+
+  /* "Teknik föy" etiketi: küçük, seyrek harfli, mono. */
+  --text-spec: 0.6875rem;
+  --text-spec--line-height: 1.4;
+  --text-spec--letter-spacing: 0.18em;
+
+  /* --- Hareket ---
+     Süreler kısa tutuldu: kullanıcıyı bekletmeyen, kesilebilir animasyonlar. */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-marquee: marquee 42s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ==========================================================================
+   Temel katman
+   ========================================================================== */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--color-steel);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Sabit navbar'ın hash hedeflerini örtmesini engeller. */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+  }
+
+  /* Monitör boyutuna göre orantılı ölçekleme (fluid scaling):
+     1440px monitörde 16px, 1920px Full HD monitörde ~19px, 2K ve 4K
+     büyük ekranlarda orantılı büyüyerek sitenin her ekranda aynı doluluk
+     ve boyutta görünmesini sağlar; küçük monitörlerde orantılı küçülür. */
+  @media (min-width: 1024px) {
+    html {
+      font-size: clamp(14.5px, calc(7px + 0.625vw), 28px);
+    }
+  }
+
+  body {
+    background-color: var(--color-obsidian);
+    color: var(--color-optic);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uzun ürün adları dar ekranda taşmasın. */
+    overflow-wrap: break-word;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Tek ve tutarlı odak göstergesi. Fare tıklamasında görünmez,
+     klavye gezintisinde her zaman görünür. */
+  :focus-visible {
+    outline: 2px solid var(--color-brass);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-brass);
+    color: var(--color-obsidian);
+  }
+
+  /* Hareket hassasiyeti olan kullanıcılar için CSS tarafı.
+     Framer Motion tarafı app/layout.tsx içindeki MotionConfig ile kapanıyor. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ==========================================================================
+   Özel yardımcı sınıflar
+   ========================================================================== */
+
+/**
+ * Film grenli doku. Thrudark'ın "mat yüzey" hissini veren şey bu:
+ * düz siyah yerine, üzerinde çok hafif gürültü olan bir zemin.
+ * Tekil inline SVG, ağ isteği yok.
+ */
+@utility grain {
+  position: relative;
+}
+
+@utility grain-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/** Yatay ürün rayında kaydırma çubuğunu gizler (erişilebilirliği bozmadan). */
+@utility hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/** Bölüm üstündeki ince pirinç aksanlı ayraç. */
+@utility rule-brass {
+  background-image: linear-gradient(
+    to right,
+    var(--color-brass) 0,
+    var(--color-brass) 3rem,
+    var(--color-steel) 3rem,
+    var(--color-steel) 100%
+  );
+  height: 1px;
+}
+
+/** Sayfa içeriğini ortalayan standart kap. Genişlikler tek yerden yönetilir. */
+@utility container-page {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 88rem;
+  padding-inline: 1.25rem;
+
+  @media (width >= 48rem) {
+    padding-inline: 2rem;
+  }
+
+  @media (width >= 80rem) {
+    padding-inline: 3rem;
+  }
+}

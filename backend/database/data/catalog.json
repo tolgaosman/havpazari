@@ -1,0 +1,1924 @@
+{
+  "brands": [
+    {
+      "id": "b-01",
+      "name": "Beretta",
+      "slug": "beretta",
+      "country": "İtalya"
+    },
+    {
+      "id": "b-02",
+      "name": "Hatsan",
+      "slug": "hatsan",
+      "country": "Türkiye"
+    },
+    {
+      "id": "b-03",
+      "name": "Huğlu",
+      "slug": "huglu",
+      "country": "Türkiye"
+    },
+    {
+      "id": "b-04",
+      "name": "Vortex Optics",
+      "slug": "vortex",
+      "country": "ABD"
+    },
+    {
+      "id": "b-05",
+      "name": "Leupold",
+      "slug": "leupold",
+      "country": "ABD"
+    },
+    {
+      "id": "b-06",
+      "name": "Bushnell",
+      "slug": "bushnell",
+      "country": "ABD"
+    },
+    {
+      "id": "b-07",
+      "name": "Deerhunter",
+      "slug": "deerhunter",
+      "country": "Danimarka"
+    },
+    {
+      "id": "b-08",
+      "name": "Härkila",
+      "slug": "harkila",
+      "country": "Danimarka"
+    },
+    {
+      "id": "b-09",
+      "name": "Swedteam",
+      "slug": "swedteam",
+      "country": "İsveç"
+    },
+    {
+      "id": "b-10",
+      "name": "Meindl",
+      "slug": "meindl",
+      "country": "Almanya"
+    },
+    {
+      "id": "b-11",
+      "name": "Aigle",
+      "slug": "aigle",
+      "country": "Fransa"
+    },
+    {
+      "id": "b-12",
+      "name": "Coleman",
+      "slug": "coleman",
+      "country": "ABD"
+    },
+    {
+      "id": "b-13",
+      "name": "Vango",
+      "slug": "vango",
+      "country": "İskoçya"
+    },
+    {
+      "id": "b-14",
+      "name": "Primus",
+      "slug": "primus",
+      "country": "İsveç"
+    },
+    {
+      "id": "b-15",
+      "name": "Petzl",
+      "slug": "petzl",
+      "country": "Fransa"
+    },
+    {
+      "id": "b-16",
+      "name": "Morakniv",
+      "slug": "morakniv",
+      "country": "İsveç"
+    },
+    {
+      "id": "b-17",
+      "name": "Leatherman",
+      "slug": "leatherman",
+      "country": "ABD"
+    },
+    {
+      "id": "b-18",
+      "name": "Hasan Av Dünyası",
+      "slug": "hasan-av",
+      "country": "KKTC"
+    }
+  ],
+  "categories": [
+    {
+      "id": "c-01",
+      "name": "Tüfek & Optik",
+      "slug": "tufek-optik",
+      "tagline": "Ruhsatlı satış, mağazada teslim",
+      "description": "Av tüfekleri, fişek ve mühimmat ile arazide fark yaratan dürbün, telemetre ve nişangâhlar. Ruhsata tabi ürünler yalnızca mağazamızda, belge karşılığı satılır.",
+      "imageUrl": "https://images.unsplash.com/photo-1542811688-46ff8b8ca890?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Ormanda tüfeğini dolduran avcı"
+    },
+    {
+      "id": "c-02",
+      "name": "Taktik Giyim",
+      "slug": "taktik-giyim",
+      "tagline": "Rüzgâr, yağmur ve dikenli makiye karşı",
+      "description": "Su geçirmez ceketler, kamuflaj montlar, dayanıklı pantolonlar ve Kıbrıs arazisinde bütün gün yürüyebileceğiniz av botları.",
+      "imageUrl": "https://images.unsplash.com/photo-1617141727232-455ac5d0fd2b?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Kamuflaj mont ve sırt çantasıyla arazide yürüyen avcı"
+    },
+    {
+      "id": "c-03",
+      "name": "Kamp & Survival",
+      "slug": "kamp-survival",
+      "tagline": "Av sonrası kamp keyfi",
+      "description": "Çadır, uyku tulumu, kamp ocağı, aydınlatma ve sahada işinizi gören mutfak ekipmanları. Hepsi mağazada kurulu şekilde denenebilir.",
+      "imageUrl": "https://images.unsplash.com/photo-1631740694409-580a251e4ab8?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Güneş ışığının süzüldüğü ormanda kurulu çadır"
+    },
+    {
+      "id": "c-04",
+      "name": "Bıçak & Multitool",
+      "slug": "bicak-multitool",
+      "tagline": "Keskin kalan çelik",
+      "description": "Av bıçakları, katlanır çakılar ve çok amaçlı el aletleri. Karbon ve paslanmaz çelik seçenekleriyle, bileme hizmeti mağazamızda mevcuttur.",
+      "imageUrl": "https://images.unsplash.com/photo-1542130910-51de7a8104b6?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Elde tutulan av bıçağı, arka planda dallar"
+    },
+    {
+      "id": "c-05",
+      "name": "Av Aksesuarları",
+      "slug": "av-aksesuarlari",
+      "tagline": "Küçük ekipman, büyük fark",
+      "description": "Fişeklikli yelekler, sırt ve omuz çantaları, termoslar, eldivenler ve gizlenme ağları — av gününü kolaylaştıran her şey.",
+      "imageUrl": "https://images.unsplash.com/photo-1485809052957-5113b0ff51af?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Yere serilmiş sırt çantası ve deri bot"
+    }
+  ],
+  "products": [
+    {
+      "id": "p-001",
+      "sku": "HAD-TFK-001",
+      "name": "Beretta A300 Ultima Yarı Otomatik",
+      "slug": "beretta-a300-ultima-yari-otomatik",
+      "shortDescription": "12 kalibre, gaz sistemli, geniş şarjörlü klasik saha tüfeği.",
+      "description": "Beretta'nın uzun soluklu A300 serisinin güncel sürümü. Blink gaz sistemi sayesinde hafif fişekten ağır saçmaya kadar sorunsuz atım yapar, kirli koşullarda tıkanmaz. Kauçuk kaplama dipçik ve genişletilmiş kurma kolu eldivenle kullanımı kolaylaştırır. Ruhsat ve satış işlemleri yalnızca mağazamızda yapılır.",
+      "price": null,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-01",
+        "name": "Tüfek & Optik",
+        "slug": "tufek-optik"
+      },
+      "brand": {
+        "id": "b-01",
+        "name": "Beretta",
+        "slug": "beretta"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1666212445354-e8db5c1d92b9?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Arazide tüfeğini omuzlamış avcı"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1645374054016-ab233d32fd28?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Ağaç yanında tüfek tutan avcı"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Kalibre",
+          "value": "12 Ga"
+        },
+        {
+          "label": "Namlu",
+          "value": "71 cm, krom kaplama"
+        },
+        {
+          "label": "Sistem",
+          "value": "Gaz sistemli yarı otomatik"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "3,2 kg"
+        },
+        {
+          "label": "Şok",
+          "value": "5 adet değiştirilebilir"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": true,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "yarı otomatik",
+        "12 kalibre",
+        "saha"
+      ],
+      "createdAt": "2026-03-11T09:00:00.000Z"
+    },
+    {
+      "id": "p-002",
+      "sku": "HAD-TFK-002",
+      "name": "Hatsan Escort PS Av Tüfeği",
+      "slug": "hatsan-escort-ps-av-tufegi",
+      "shortDescription": "Fiyat/performans dengesiyle bölgede en çok tercih edilen model.",
+      "description": "Hatsan Escort PS, yerli üretim kalitesiyle uzun yıllardır sahada. Sentetik kundağı neme ve darbeye dayanıklı, bakımı kolaydır. İlk tüfeğini alacak avcılar için güvenli ve ekonomik bir başlangıç. Ruhsat işlemleri için mağazamıza bekliyoruz.",
+      "price": null,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-01",
+        "name": "Tüfek & Optik",
+        "slug": "tufek-optik"
+      },
+      "brand": {
+        "id": "b-02",
+        "name": "Hatsan",
+        "slug": "hatsan"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1645374054016-ab233d32fd28?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Ağaca yaslanmış tüfek tutan avcı"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1521477177889-6420230f42a1?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Ormanda tüfek taşıyan avcı"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Kalibre",
+          "value": "12 Ga"
+        },
+        {
+          "label": "Namlu",
+          "value": "66 cm"
+        },
+        {
+          "label": "Kundak",
+          "value": "Sentetik, kauçuk dipçik"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "3,0 kg"
+        },
+        {
+          "label": "Kapasite",
+          "value": "4+1"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": true,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "yerli üretim",
+        "ekonomik",
+        "12 kalibre"
+      ],
+      "createdAt": "2026-02-04T09:00:00.000Z"
+    },
+    {
+      "id": "p-003",
+      "sku": "HAD-TFK-003",
+      "name": "Huğlu Atrox Süperpoze",
+      "slug": "huglu-atrox-superpoze",
+      "shortDescription": "Çift namlulu, ceviz kundaklı, dengesi oturmuş klasik.",
+      "description": "Üst üste çift namlulu (süperpoze) yapısıyla hızlı ikinci atış imkânı verir. Seçilmiş ceviz kundak ve işlemeli gövde, Huğlu'nun el işçiliğini yansıtır. Keklik ve güvercin avında tercih edilir. Ruhsata tabidir.",
+      "price": null,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-01",
+        "name": "Tüfek & Optik",
+        "slug": "tufek-optik"
+      },
+      "brand": {
+        "id": "b-03",
+        "name": "Huğlu",
+        "slug": "huglu"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1521477177889-6420230f42a1?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Ormanda tüfeğiyle ilerleyen avcı"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Kalibre",
+          "value": "12 Ga"
+        },
+        {
+          "label": "Namlu",
+          "value": "76 cm, süperpoze"
+        },
+        {
+          "label": "Kundak",
+          "value": "Seçilmiş ceviz"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "3,4 kg"
+        },
+        {
+          "label": "Şok",
+          "value": "Değiştirilebilir, 5'li set"
+        }
+      ],
+      "stockStatus": "low_stock",
+      "requiresLicense": true,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "süperpoze",
+        "ceviz kundak",
+        "keklik"
+      ],
+      "createdAt": "2026-01-20T09:00:00.000Z"
+    },
+    {
+      "id": "p-004",
+      "sku": "HAD-MHM-001",
+      "name": "12 Kalibre Av Fişeği — 25'li Paket",
+      "slug": "12-kalibre-av-fisegi-25li-paket",
+      "shortDescription": "Farklı saçma numaralarıyla, kutu veya koli halinde.",
+      "description": "Keklik, güvercin, ördek ve tavşan avına uygun saçma numaralarında av fişeği. Nem almayan plastik gövde, tutarlı barut dolumu. Satış ruhsata tabidir; kimlik ve av tezkeresi ile mağazamızdan temin edilir.",
+      "price": null,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-01",
+        "name": "Tüfek & Optik",
+        "slug": "tufek-optik"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1542811688-46ff8b8ca890?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Tüfeğine fişek süren avcının yakın çekimi"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Kalibre",
+          "value": "12 Ga"
+        },
+        {
+          "label": "Kapsül boyu",
+          "value": "70 mm"
+        },
+        {
+          "label": "Saçma no",
+          "value": "0 – 9 arası"
+        },
+        {
+          "label": "Gramaj",
+          "value": "28 g / 32 g / 36 g"
+        },
+        {
+          "label": "Paket",
+          "value": "25 adet"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": true,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "fişek",
+        "mühimmat",
+        "ruhsatlı"
+      ],
+      "createdAt": "2026-01-08T09:00:00.000Z"
+    },
+    {
+      "id": "p-005",
+      "sku": "HAD-OPT-001",
+      "name": "Vortex Diamondback HD 10x42 Dürbün",
+      "slug": "vortex-diamondback-hd-10x42-durbun",
+      "shortDescription": "Alacakaranlıkta bile net görüntü, ömür boyu garanti.",
+      "description": "HD cam elemanları ve tam çok katmanlı kaplama sayesinde gün doğumu ve gün batımındaki düşük ışıkta bile kontrastlı, renkleri bozmayan bir görüntü verir. Azotla doldurulmuş, O-ring contalı gövdesi suya ve buğulanmaya karşı sızdırmaz. Vortex'in koşulsuz ömür boyu garantisi kapsamındadır.",
+      "price": 22500,
+      "compareAtPrice": 26900,
+      "currency": "TRY",
+      "category": {
+        "id": "c-01",
+        "name": "Tüfek & Optik",
+        "slug": "tufek-optik"
+      },
+      "brand": {
+        "id": "b-04",
+        "name": "Vortex Optics",
+        "slug": "vortex"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1453563391321-df71955e9289?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Siyah dürbünün yakın çekimi"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1559780528-19fc03b3a725?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Elinde dürbün tutan kişi"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Büyütme",
+          "value": "10x"
+        },
+        {
+          "label": "Objektif",
+          "value": "42 mm"
+        },
+        {
+          "label": "Görüş alanı",
+          "value": "1000 m'de 99 m"
+        },
+        {
+          "label": "Göz mesafesi",
+          "value": "15 mm"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "621 g"
+        },
+        {
+          "label": "Su geçirmezlik",
+          "value": "Azot dolgulu, IPX7"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "dürbün",
+        "hd optik",
+        "ömür boyu garanti"
+      ],
+      "createdAt": "2026-05-22T09:00:00.000Z"
+    },
+    {
+      "id": "p-006",
+      "sku": "HAD-OPT-002",
+      "name": "Bushnell Prime 8x32 Dürbün",
+      "slug": "bushnell-prime-8x32-durbun",
+      "shortDescription": "Hafif, kompakt, boyundan sarkarken unutulan gövde.",
+      "description": "Uzun yürüyüşlerde ağırlık yapmayan kompakt gövde. 8x büyütme geniş görüş alanı sağlar, hareketli hedefi takip etmek kolaydır. EXO Bariyer kaplaması cam üzerinde su, yağ ve tozu tutmaz — yağmurda silmeden bakmaya devam edebilirsiniz.",
+      "price": 8900,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-01",
+        "name": "Tüfek & Optik",
+        "slug": "tufek-optik"
+      },
+      "brand": {
+        "id": "b-06",
+        "name": "Bushnell",
+        "slug": "bushnell"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1559780529-cd8d39cd23c1?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kahverengi gövdeli dürbün"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1634919758551-b2214dae014c?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kayanın üzerinde duran dürbün"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Büyütme",
+          "value": "8x"
+        },
+        {
+          "label": "Objektif",
+          "value": "32 mm"
+        },
+        {
+          "label": "Görüş alanı",
+          "value": "1000 m'de 129 m"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "439 g"
+        },
+        {
+          "label": "Kaplama",
+          "value": "EXO Bariyer"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "dürbün",
+        "kompakt",
+        "hafif"
+      ],
+      "createdAt": "2026-04-02T09:00:00.000Z"
+    },
+    {
+      "id": "p-007",
+      "sku": "HAD-OPT-003",
+      "name": "Leupold RX-1400i TBR/W Telemetre",
+      "slug": "leupold-rx-1400i-tbrw-telemetre",
+      "shortDescription": "Eğimli arazide gerçek atış mesafesini hesaplar.",
+      "description": "Yokuş yukarı veya aşağı atışlarda düz mesafe yanıltır; RX-1400i dahili eğim sensörüyle gerçek balistik mesafeyi verir. Tek elle kullanılan iki tuşlu arayüz, eldivenle bile sorun çıkarmaz. 1400 metreye kadar reflektif hedef okur.",
+      "price": 19800,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-01",
+        "name": "Tüfek & Optik",
+        "slug": "tufek-optik"
+      },
+      "brand": {
+        "id": "b-05",
+        "name": "Leupold",
+        "slug": "leupold"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1634919758551-b2214dae014c?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kaya üzerinde duran optik cihaz"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Menzil",
+          "value": "1400 m (reflektif)"
+        },
+        {
+          "label": "Hayvan menzili",
+          "value": "800 m"
+        },
+        {
+          "label": "Büyütme",
+          "value": "5x"
+        },
+        {
+          "label": "Eğim düzeltme",
+          "value": "TBR/W dahili"
+        },
+        {
+          "label": "Pil",
+          "value": "CR2, dahil"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "182 g"
+        }
+      ],
+      "stockStatus": "low_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": true,
+      "tags": [
+        "telemetre",
+        "mesafe ölçer",
+        "balistik"
+      ],
+      "createdAt": "2026-08-19T09:00:00.000Z"
+    },
+    {
+      "id": "p-008",
+      "sku": "HAD-GYM-001",
+      "name": "Deerhunter Excape Su Geçirmez Ceket",
+      "slug": "deerhunter-excape-su-gecirmez-ceket",
+      "shortDescription": "Sessiz dış kumaş, tam sızdırmaz dikişler, nefes alan astar.",
+      "description": "Avcılıkta ceketin sesi en az su geçirmezliği kadar önemlidir. Excape'in fırçalanmış dış yüzeyi dala sürtündüğünde hışırdamaz. Bantlanmış dikişler ve 10.000 mm su sütunu ile uzun yağmurda kuru kalırsınız; koltuk altı fermuarları terlemeyi dışarı atar.",
+      "price": 11900,
+      "compareAtPrice": 13500,
+      "currency": "TRY",
+      "category": {
+        "id": "c-02",
+        "name": "Taktik Giyim",
+        "slug": "taktik-giyim"
+      },
+      "brand": {
+        "id": "b-07",
+        "name": "Deerhunter",
+        "slug": "deerhunter"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1680529642326-3a85fea99883?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Sisli ormanda yeşil ceketli avcı"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Su sütunu",
+          "value": "10.000 mm"
+        },
+        {
+          "label": "Nefes alma",
+          "value": "8.000 g/m²/24s"
+        },
+        {
+          "label": "Dikişler",
+          "value": "Tamamen bantlanmış"
+        },
+        {
+          "label": "Cepler",
+          "value": "4 dış, 2 iç"
+        },
+        {
+          "label": "Bedenler",
+          "value": "S – 3XL"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "su geçirmez",
+        "sessiz kumaş",
+        "ceket"
+      ],
+      "createdAt": "2026-06-14T09:00:00.000Z"
+    },
+    {
+      "id": "p-009",
+      "sku": "HAD-GYM-002",
+      "name": "Swedteam Ridge Kamuflaj Mont",
+      "slug": "swedteam-ridge-kamuflaj-mont",
+      "shortDescription": "İskandinav dayanıklılığı, orman desenli tam kamuflaj.",
+      "description": "İsveç'in sert kış koşulları için tasarlanmış, sonradan Akdeniz sonbaharına da uyarlanmış bir mont. Çıkarılabilir astarı sayesinde geçiş mevsimlerinde tek başına, kışın astarla birlikte kullanılır. Omuz ve dirsek bölgeleri güçlendirilmiştir.",
+      "price": 16500,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-02",
+        "name": "Taktik Giyim",
+        "slug": "taktik-giyim"
+      },
+      "brand": {
+        "id": "b-09",
+        "name": "Swedteam",
+        "slug": "swedteam"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1617141727232-455ac5d0fd2b?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kamuflaj mont ve turuncu sırt çantalı avcı"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1772521237495-b30619e37300?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kamuflaj ceket ve bandana takan kişi"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Desen",
+          "value": "Orman kamuflajı"
+        },
+        {
+          "label": "Astar",
+          "value": "Çıkarılabilir termal"
+        },
+        {
+          "label": "Su iticilik",
+          "value": "DWR kaplama"
+        },
+        {
+          "label": "Güçlendirme",
+          "value": "Omuz ve dirsek"
+        },
+        {
+          "label": "Bedenler",
+          "value": "M – 3XL"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": true,
+      "tags": [
+        "kamuflaj",
+        "mont",
+        "kışlık"
+      ],
+      "createdAt": "2026-09-01T09:00:00.000Z"
+    },
+    {
+      "id": "p-010",
+      "sku": "HAD-GYM-003",
+      "name": "Härkila Mountain Hunter Pantolon",
+      "slug": "harkila-mountain-hunter-pantolon",
+      "shortDescription": "Dikene dayanıklı, dizden esneyen, gün boyu rahat.",
+      "description": "Kıbrıs makisi pantolon eskitir. Mountain Hunter'ın ön yüzü takviyeli dokumayla kaplı, arka ve diz iç kısımları esnek panelli. Uzun tırmanışta dizi kısıtlamaz, oturduğunuzda paça yukarı kaçmaz.",
+      "price": 9700,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-02",
+        "name": "Taktik Giyim",
+        "slug": "taktik-giyim"
+      },
+      "brand": {
+        "id": "b-08",
+        "name": "Härkila",
+        "slug": "harkila"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1581870789816-1a7d5ea78d61?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kaya üzerinde oturan outdoor kıyafetli kişi"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Kumaş",
+          "value": "Naylon takviyeli, esnek panelli"
+        },
+        {
+          "label": "Diz",
+          "value": "Ön şekilli, ped yuvalı"
+        },
+        {
+          "label": "Cepler",
+          "value": "2 yan, 2 bacak, 1 arka fermuarlı"
+        },
+        {
+          "label": "Bel",
+          "value": "Esnek, askı düğmeli"
+        },
+        {
+          "label": "Bedenler",
+          "value": "46 – 60"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "pantolon",
+        "dayanıklı",
+        "maki"
+      ],
+      "createdAt": "2026-03-29T09:00:00.000Z"
+    },
+    {
+      "id": "p-011",
+      "sku": "HAD-GYM-004",
+      "name": "Deerhunter Rogaland Softshell Ceket",
+      "slug": "deerhunter-rogaland-softshell-ceket",
+      "shortDescription": "Ara katman olarak da, tek başına da giyilen ince zırh.",
+      "description": "Rüzgârı tamamen kesen, hafif yağmuru geri çeviren üç katmanlı softshell. İçi tüylü astarlı olduğu için serin sabahlarda tek başına yeterli; soğukta montun altına ara katman olarak girer. Fermuar dilleri sessiz kauçuktur.",
+      "price": 7800,
+      "compareAtPrice": 8900,
+      "currency": "TRY",
+      "category": {
+        "id": "c-02",
+        "name": "Taktik Giyim",
+        "slug": "taktik-giyim"
+      },
+      "brand": {
+        "id": "b-07",
+        "name": "Deerhunter",
+        "slug": "deerhunter"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1772521237495-b30619e37300?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kamuflaj ceketli kişi portresi"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Yapı",
+          "value": "3 katmanlı softshell"
+        },
+        {
+          "label": "Rüzgâr",
+          "value": "Tamamen geçirmez"
+        },
+        {
+          "label": "Astar",
+          "value": "Tüylü iç yüzey"
+        },
+        {
+          "label": "Cepler",
+          "value": "2 fermuarlı yan, 1 göğüs"
+        },
+        {
+          "label": "Bedenler",
+          "value": "S – 3XL"
+        }
+      ],
+      "stockStatus": "low_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "softshell",
+        "ara katman",
+        "rüzgâr geçirmez"
+      ],
+      "createdAt": "2026-02-17T09:00:00.000Z"
+    },
+    {
+      "id": "p-012",
+      "sku": "HAD-BOT-001",
+      "name": "Meindl Dovre Extreme GTX Av Botu",
+      "slug": "meindl-dovre-extreme-gtx-av-botu",
+      "shortDescription": "Gore-Tex astarlı, bilek destekli, kayadan korkmayan bot.",
+      "description": "Alman el işçiliğiyle üretilen, nubuk deri gövdeli ağır sınıf av botu. Gore-Tex astarı ayağı kuru tutarken terlemeyi dışarı atar. Vibram tabanı ıslak kayada ve gevşek toprakta tutunur; yüksek konçu bilek burkulmasına karşı destek verir. İlk birkaç yürüyüşte ayağa oturur.",
+      "price": 14900,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-02",
+        "name": "Taktik Giyim",
+        "slug": "taktik-giyim"
+      },
+      "brand": {
+        "id": "b-10",
+        "name": "Meindl",
+        "slug": "meindl"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1573543794198-73ff121c0a8f?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Bir çift kahverengi deri bot"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Üst",
+          "value": "Nubuk deri, 2,6 mm"
+        },
+        {
+          "label": "Astar",
+          "value": "Gore-Tex"
+        },
+        {
+          "label": "Taban",
+          "value": "Vibram"
+        },
+        {
+          "label": "Konç",
+          "value": "Yüksek, bilek destekli"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "790 g (tek, 42 numara)"
+        },
+        {
+          "label": "Numaralar",
+          "value": "39 – 48"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "bot",
+        "gore-tex",
+        "vibram"
+      ],
+      "createdAt": "2026-05-06T09:00:00.000Z"
+    },
+    {
+      "id": "p-013",
+      "sku": "HAD-BOT-002",
+      "name": "Aigle Parcours 2 Kauçuk Çizme",
+      "slug": "aigle-parcours-2-kaucuk-cizme",
+      "shortDescription": "Çamurlu tarla ve sulak alan için el yapımı doğal kauçuk.",
+      "description": "Fransa'da hâlâ elde kalıplanan doğal kauçuk çizme. Sulak alanda, çamurlu tarlada ve sabah çiyinde ayağı tamamen kuru tutar. İç astarı ter emici, taban kalıbı çamuru atacak şekilde derin dişlidir. Baldır genişliği ayarlanabilir.",
+      "price": 6400,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-02",
+        "name": "Taktik Giyim",
+        "slug": "taktik-giyim"
+      },
+      "brand": {
+        "id": "b-11",
+        "name": "Aigle",
+        "slug": "aigle"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1606036525923-525fa3b35465?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Bağcıklı kahverengi deri çizmeler"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Malzeme",
+          "value": "Doğal kauçuk, el kalıplama"
+        },
+        {
+          "label": "Astar",
+          "value": "Ter emici tekstil"
+        },
+        {
+          "label": "Taban",
+          "value": "Derin dişli, çamur atan"
+        },
+        {
+          "label": "Baldır",
+          "value": "Ayarlanabilir kayış"
+        },
+        {
+          "label": "Numaralar",
+          "value": "39 – 47"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "çizme",
+        "su geçirmez",
+        "sulak alan"
+      ],
+      "createdAt": "2026-01-30T09:00:00.000Z"
+    },
+    {
+      "id": "p-014",
+      "sku": "HAD-KMP-001",
+      "name": "Coleman Darwin 3+ Çadır",
+      "slug": "coleman-darwin-3-plus-cadir",
+      "shortDescription": "Üç kişilik, ön verandalı, on dakikada kurulan tünel çadır.",
+      "description": "Üç kişinin rahatça uyuyabileceği iç odaya ek olarak, ekipmanı ıslatmadan bırakabileceğiniz bir ön veranda sunar. Fiberglas direkler renk kodludur, ilk kez kuran biri bile on dakikada bitirir. Zemin küvet tipi dikilmiştir, yerden su almaz.",
+      "price": 12500,
+      "compareAtPrice": 14200,
+      "currency": "TRY",
+      "category": {
+        "id": "c-03",
+        "name": "Kamp & Survival",
+        "slug": "kamp-survival"
+      },
+      "brand": {
+        "id": "b-12",
+        "name": "Coleman",
+        "slug": "coleman"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1537905569824-f89f14cceb68?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Gece ağaçlar arasında kurulu kubbe çadır"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Kapasite",
+          "value": "3 kişi"
+        },
+        {
+          "label": "Su sütunu",
+          "value": "3.000 mm"
+        },
+        {
+          "label": "Zemin",
+          "value": "Küvet tipi, 10.000 mm"
+        },
+        {
+          "label": "Kurulu ölçü",
+          "value": "310 × 180 × 120 cm"
+        },
+        {
+          "label": "Paket ağırlığı",
+          "value": "4,7 kg"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "çadır",
+        "3 kişilik",
+        "kamp"
+      ],
+      "createdAt": "2026-04-18T09:00:00.000Z"
+    },
+    {
+      "id": "p-015",
+      "sku": "HAD-KMP-002",
+      "name": "Vango Atlas 300 Uyku Tulumu",
+      "slug": "vango-atlas-300-uyku-tulumu",
+      "shortDescription": "−2 °C konfor sıcaklığı, mumyalı kesim, sıkıştırma kılıflı.",
+      "description": "Kıbrıs'ın kış gecelerinde ve Toros yaylalarında rahatça kullanılan üç mevsim tulumu. Mumya kesim ısıyı vücuda yakın tutar, boyun körüğü sıcak havanın kaçmasını engeller. Fermuar çift yönlüdür, gece ayak ucundan havalandırabilirsiniz.",
+      "price": 5200,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-03",
+        "name": "Kamp & Survival",
+        "slug": "kamp-survival"
+      },
+      "brand": {
+        "id": "b-13",
+        "name": "Vango",
+        "slug": "vango"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1532339142463-fd0a8979791a?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Çadırın içinde uzanıp manzaraya bakan kişi"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Konfor",
+          "value": "−2 °C"
+        },
+        {
+          "label": "Limit",
+          "value": "−8 °C"
+        },
+        {
+          "label": "Dolgu",
+          "value": "Sentetik, 300 g/m²"
+        },
+        {
+          "label": "Kesim",
+          "value": "Mumya"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "1,6 kg"
+        },
+        {
+          "label": "Paket ölçüsü",
+          "value": "38 × 22 cm"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "uyku tulumu",
+        "3 mevsim",
+        "kamp"
+      ],
+      "createdAt": "2026-03-03T09:00:00.000Z"
+    },
+    {
+      "id": "p-016",
+      "sku": "HAD-KMP-003",
+      "name": "Primus Lite+ Kamp Ocağı",
+      "slug": "primus-lite-plus-kamp-ocagi",
+      "shortDescription": "Rüzgârda sönmeyen, yarım litre suyu 2,5 dakikada kaynatan sistem.",
+      "description": "Bütünleşik pişirme sistemi: ocak, ısı değiştiricili pot ve kapak tek parça halinde taşınır. Rüzgâr siperi sayesinde açık arazide alev dağılmaz, yakıt tüketimi düşer. Kahvaltı için su kaynatmak ya da akşam çorbası ısıtmak birkaç dakika sürer.",
+      "price": 4900,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-03",
+        "name": "Kamp & Survival",
+        "slug": "kamp-survival"
+      },
+      "brand": {
+        "id": "b-14",
+        "name": "Primus",
+        "slug": "primus"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1520963959303-a5cc3bdf9260?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Taşınabilir gümüş kamp ocağı"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Kaynatma",
+          "value": "0,5 L / 2 dk 45 sn"
+        },
+        {
+          "label": "Pot hacmi",
+          "value": "0,5 L"
+        },
+        {
+          "label": "Güç",
+          "value": "1500 W"
+        },
+        {
+          "label": "Yakıt",
+          "value": "Vidalı gaz kartuşu"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "390 g"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "ocak",
+        "pişirme",
+        "hafif"
+      ],
+      "createdAt": "2026-06-27T09:00:00.000Z"
+    },
+    {
+      "id": "p-017",
+      "sku": "HAD-KMP-004",
+      "name": "Petzl Actik Core Kafa Lambası",
+      "slug": "petzl-actik-core-kafa-lambasi",
+      "shortDescription": "450 lümen, şarjlı, kırmızı ışık modlu — sabah çıkışının standardı.",
+      "description": "Karanlıkta araziye girerken elleriniz boş kalsın diye. 450 lümen geniş huzme uzağı aydınlatır; kırmızı ışık modu gece görüşünüzü bozmaz ve avı ürkütmez. Dahili şarjlı batarya USB ile dolar, yedek olarak AAA pil de takılabilir.",
+      "price": 3450,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-03",
+        "name": "Kamp & Survival",
+        "slug": "kamp-survival"
+      },
+      "brand": {
+        "id": "b-15",
+        "name": "Petzl",
+        "slug": "petzl"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1645598857943-dd63ddd3dc50?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Orman zemininde duran metal lamba"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Işık gücü",
+          "value": "450 lümen"
+        },
+        {
+          "label": "Menzil",
+          "value": "90 m"
+        },
+        {
+          "label": "Batarya",
+          "value": "1250 mAh, USB şarjlı"
+        },
+        {
+          "label": "Yedek",
+          "value": "3 × AAA uyumlu"
+        },
+        {
+          "label": "Kırmızı mod",
+          "value": "Var"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "75 g"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": true,
+      "tags": [
+        "kafa lambası",
+        "şarjlı",
+        "kırmızı ışık"
+      ],
+      "createdAt": "2026-08-25T09:00:00.000Z"
+    },
+    {
+      "id": "p-018",
+      "sku": "HAD-KMP-005",
+      "name": "Coleman Asılabilir Kamp Feneri",
+      "slug": "coleman-asilabilir-kamp-feneri",
+      "shortDescription": "Çadır içini ve sofrayı gölgesiz aydınlatan 360° fener.",
+      "description": "Dört yöne eşit ışık veren, tepesindeki kancayla çadır direğine ya da ağaç dalına asılan fener. Kısılabilir ışık ayarı sayesinde gece sofrada göz almaz, uyku öncesi loş ışığa alınır. Gövdesi darbeye dayanıklı polikarbonattır.",
+      "price": 2750,
+      "compareAtPrice": 3100,
+      "currency": "TRY",
+      "category": {
+        "id": "c-03",
+        "name": "Kamp & Survival",
+        "slug": "kamp-survival"
+      },
+      "brand": {
+        "id": "b-12",
+        "name": "Coleman",
+        "slug": "coleman"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1641190272613-338e2b286cc5?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Ağaç dalına asılmış metal fener"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Işık gücü",
+          "value": "300 lümen"
+        },
+        {
+          "label": "Aydınlatma",
+          "value": "360°"
+        },
+        {
+          "label": "Kısma",
+          "value": "Kademesiz"
+        },
+        {
+          "label": "Çalışma süresi",
+          "value": "20 saat (düşük mod)"
+        },
+        {
+          "label": "Gövde",
+          "value": "Darbeye dayanıklı polikarbonat"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "fener",
+        "aydınlatma",
+        "çadır"
+      ],
+      "createdAt": "2026-02-25T09:00:00.000Z"
+    },
+    {
+      "id": "p-019",
+      "sku": "HAD-KMP-006",
+      "name": "Emaye Kamp Çaydanlığı ve Sofra Seti",
+      "slug": "emaye-kamp-caydanligi-ve-sofra-seti",
+      "shortDescription": "Ateşe dayanıklı emaye; çaydanlık, iki bardak ve iki tabak.",
+      "description": "Doğrudan ateşin üzerine konabilen emaye kaplama çelik set. Yıllanan bir malzeme: çizilir, iz tutar, ama kırılmaz ve tat vermez. Çaydanlık 1,2 litreliktir; iki kişilik sabah çayı bir seferde çıkar.",
+      "price": 2100,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-03",
+        "name": "Kamp & Survival",
+        "slug": "kamp-survival"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1618521862284-83c8f5698057?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kuru yapraklar üzerinde siyah çelik çaydanlık"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Set içeriği",
+          "value": "1 çaydanlık, 2 bardak, 2 tabak"
+        },
+        {
+          "label": "Çaydanlık hacmi",
+          "value": "1,2 L"
+        },
+        {
+          "label": "Malzeme",
+          "value": "Emaye kaplı çelik"
+        },
+        {
+          "label": "Isı kaynağı",
+          "value": "Açık ateş, ocak, gaz"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "1,1 kg (set)"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "emaye",
+        "sofra",
+        "çaydanlık"
+      ],
+      "createdAt": "2026-01-14T09:00:00.000Z"
+    },
+    {
+      "id": "p-020",
+      "sku": "HAD-BCK-001",
+      "name": "Morakniv Companion Bıçak",
+      "slug": "morakniv-companion-bicak",
+      "shortDescription": "İsveç karbon çeliği, kaymayan kabza — fiyatına göre efsane.",
+      "description": "Dünyanın en çok tavsiye edilen giriş seviyesi outdoor bıçağı. Karbon çelik ağız kolay bilenir ve keskinliğini uzun tutar; kauçuk kabza ıslak elde bile kaymaz. Çıra yontmaktan av temizlemeye kadar her işi görür. Karbon çelik olduğu için kullanım sonrası kurulanmalıdır.",
+      "price": 1250,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-04",
+        "name": "Bıçak & Multitool",
+        "slug": "bicak-multitool"
+      },
+      "brand": {
+        "id": "b-16",
+        "name": "Morakniv",
+        "slug": "morakniv"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1588202807093-b41294df13af?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kütük üzerinde siyah saplı bıçak"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Ağız",
+          "value": "Karbon çelik, 2 mm"
+        },
+        {
+          "label": "Ağız uzunluğu",
+          "value": "104 mm"
+        },
+        {
+          "label": "Toplam uzunluk",
+          "value": "218 mm"
+        },
+        {
+          "label": "Kabza",
+          "value": "Kauçuk, kaymaz"
+        },
+        {
+          "label": "Kın",
+          "value": "Plastik, kemer klipsli"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "120 g"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "bıçak",
+        "karbon çelik",
+        "giriş seviyesi"
+      ],
+      "createdAt": "2026-05-30T09:00:00.000Z"
+    },
+    {
+      "id": "p-021",
+      "sku": "HAD-BCK-002",
+      "name": "Leatherman Wave+ Multitool",
+      "slug": "leatherman-wave-plus-multitool",
+      "shortDescription": "18 fonksiyon, 25 yıl garanti, cebinizdeki alet çantası.",
+      "description": "Dışarıdan açılabilen bıçak ve testere sayesinde aleti açmadan kesebilirsiniz. Pense, tel kesici, eğe, tornavida uçları ve makas dahil 18 fonksiyon. Paslanmaz gövde, 25 yıl üretici garantisi. Arazide bozulan bir şeyi tamir etmek çoğu zaman bu aletle mümkün.",
+      "price": 9800,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-04",
+        "name": "Bıçak & Multitool",
+        "slug": "bicak-multitool"
+      },
+      "brand": {
+        "id": "b-17",
+        "name": "Leatherman",
+        "slug": "leatherman"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1585594851340-2abd543cee36?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Siyah ve gümüş katlanır çakı"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Fonksiyon",
+          "value": "18 adet"
+        },
+        {
+          "label": "Ana bıçak",
+          "value": "420HC paslanmaz, dıştan açılır"
+        },
+        {
+          "label": "Kapalı uzunluk",
+          "value": "100 mm"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "241 g"
+        },
+        {
+          "label": "Garanti",
+          "value": "25 yıl"
+        }
+      ],
+      "stockStatus": "low_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "multitool",
+        "pense",
+        "25 yıl garanti"
+      ],
+      "createdAt": "2026-07-09T09:00:00.000Z"
+    },
+    {
+      "id": "p-022",
+      "sku": "HAD-BCK-003",
+      "name": "Deri Kınlı Av Bıçağı",
+      "slug": "deri-kinli-av-bicagi",
+      "shortDescription": "Sabit ağız, ceviz kabza, elde dikilmiş deri kın.",
+      "description": "Klasik av bıçağı formu: sabit ağız, dolgun ceviz kabza ve kemere takılan elde dikilmiş deri kın. Ağız açısı deri yüzmek ve et ayırmak için bilenmiştir. Bakımı yapıldığında ömür boyu kullanılır; mağazamızda ücretsiz bileme yapıyoruz.",
+      "price": 3900,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-04",
+        "name": "Bıçak & Multitool",
+        "slug": "bicak-multitool"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1502899137071-8a43139a71a9?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kahverengi saplı çelik bıçak"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Ağız",
+          "value": "Paslanmaz çelik, 3 mm"
+        },
+        {
+          "label": "Ağız uzunluğu",
+          "value": "120 mm"
+        },
+        {
+          "label": "Kabza",
+          "value": "Ceviz"
+        },
+        {
+          "label": "Kın",
+          "value": "Hakiki deri, elde dikim"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "195 g"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "av bıçağı",
+        "deri kın",
+        "ceviz kabza"
+      ],
+      "createdAt": "2026-04-11T09:00:00.000Z"
+    },
+    {
+      "id": "p-023",
+      "sku": "HAD-BCK-004",
+      "name": "Kilitli Katlanır Cep Çakısı",
+      "slug": "kilitli-katlanir-cep-cakisi",
+      "shortDescription": "Tek elle açılan, kilitli ağızlı, günlük taşınan çakı.",
+      "description": "Ağız kilidi sayesinde kullanım sırasında kapanmaz — katlanır bıçaklarda en önemli güvenlik detayı budur. Başparmak deliği ile tek elle açılır, kemer klipsiyle cepte dik durur. Günlük işlerden av sonrası küçük işlere kadar her gün yanınızda.",
+      "price": 2250,
+      "compareAtPrice": 2600,
+      "currency": "TRY",
+      "category": {
+        "id": "c-04",
+        "name": "Bıçak & Multitool",
+        "slug": "bicak-multitool"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1586541952061-0d43652df8b1?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Ahşap masa üzerinde siyah gümüş cep çakısı"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Ağız",
+          "value": "Paslanmaz çelik"
+        },
+        {
+          "label": "Ağız uzunluğu",
+          "value": "85 mm"
+        },
+        {
+          "label": "Kilit",
+          "value": "Liner lock"
+        },
+        {
+          "label": "Açılış",
+          "value": "Tek el, başparmak deliği"
+        },
+        {
+          "label": "Klips",
+          "value": "Kemer klipsi dahil"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "çakı",
+        "katlanır",
+        "günlük taşıma"
+      ],
+      "createdAt": "2026-03-17T09:00:00.000Z"
+    },
+    {
+      "id": "p-024",
+      "sku": "HAD-AKS-001",
+      "name": "Fişeklikli Av Yeleği",
+      "slug": "fisekli-av-yelegi",
+      "shortDescription": "25 fişek gözü, geniş arka cep, ayarlanabilir yan kayışlar.",
+      "description": "Fişeği aramadan bulmanızı sağlayan, göğüs hizasında 25 gözlü yelek. Arkadaki geniş cep av çantası ihtiyacını çoğu gün ortadan kaldırır. Yan kayışlar sayesinde mont üstüne de, tişört üstüne de oturur. Omuzları takviyeli, dolu haldeyken sarkmaz.",
+      "price": 3200,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-05",
+        "name": "Av Aksesuarları",
+        "slug": "av-aksesuarlari"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1591121768868-f537609281ba?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kuru otların üzerinde oturan av kıyafetli kişi"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Fişek gözü",
+          "value": "25 adet"
+        },
+        {
+          "label": "Arka cep",
+          "value": "Geniş, fermuarlı"
+        },
+        {
+          "label": "Ayar",
+          "value": "Yan kayışlı, tek beden"
+        },
+        {
+          "label": "Kumaş",
+          "value": "Su itici polyester"
+        },
+        {
+          "label": "Renk",
+          "value": "Haki / kamuflaj"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "yelek",
+        "fişeklik",
+        "aksesuar"
+      ],
+      "createdAt": "2026-02-09T09:00:00.000Z"
+    },
+    {
+      "id": "p-025",
+      "sku": "HAD-AKS-002",
+      "name": "45L Av ve Trekking Sırt Çantası",
+      "slug": "45l-av-ve-trekking-sirt-cantasi",
+      "shortDescription": "Yük taşıyan bel kemeri, tüfek askısı, yağmurluk dahil.",
+      "description": "Bir günlük ava da, iki gecelik kampa da yetecek hacim. Yük taşıyan bel kemeri ağırlığı omuzdan kalçaya aktarır — uzun yürüyüşte fark eder. Yan panelde tüfek ya da monopod askısı, altında ayrı bölmede yerleşik yağmurluk bulunur.",
+      "price": 4300,
+      "compareAtPrice": 4900,
+      "currency": "TRY",
+      "category": {
+        "id": "c-05",
+        "name": "Av Aksesuarları",
+        "slug": "av-aksesuarlari"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1622260614153-03223fb72052?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kaya üzerinde yeşil kahverengi sırt çantası"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1485809052957-5113b0ff51af?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Sırt çantası ve deri botun yan yana duruşu"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Hacim",
+          "value": "45 L"
+        },
+        {
+          "label": "Bel kemeri",
+          "value": "Yük taşıyan, pedli"
+        },
+        {
+          "label": "Tüfek askısı",
+          "value": "Var"
+        },
+        {
+          "label": "Yağmurluk",
+          "value": "Yerleşik, alt bölmede"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "1,4 kg"
+        },
+        {
+          "label": "Kumaş",
+          "value": "600D polyester, su itici"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": true,
+      "isNew": false,
+      "tags": [
+        "sırt çantası",
+        "45 litre",
+        "trekking"
+      ],
+      "createdAt": "2026-07-21T09:00:00.000Z"
+    },
+    {
+      "id": "p-026",
+      "sku": "HAD-AKS-003",
+      "name": "Omuz Av Çantası",
+      "slug": "omuz-av-cantasi",
+      "shortDescription": "Hafif çıkışlar için; file av bölmesi ve iki fişek cebi.",
+      "description": "Sırt çantası taşımak istemediğiniz kısa çıkışlar için. Arkadaki file bölme avı havalandırır ve ıslaklığı çantanın içine geçirmez. Yanlardaki iki cep fişek ve küçük ekipman için ayrılmıştır. Askı uzunluğu tek hareketle ayarlanır.",
+      "price": 2650,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-05",
+        "name": "Av Aksesuarları",
+        "slug": "av-aksesuarlari"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1622260614927-208cfe3f5cfd?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Ahşap kütük üzerinde yeşil siyah çanta"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Hacim",
+          "value": "12 L"
+        },
+        {
+          "label": "Av bölmesi",
+          "value": "File, yıkanabilir"
+        },
+        {
+          "label": "Cepler",
+          "value": "2 fişek, 1 ön fermuarlı"
+        },
+        {
+          "label": "Askı",
+          "value": "Tek hareketle ayarlanır"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "480 g"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "av çantası",
+        "omuz çantası",
+        "hafif"
+      ],
+      "createdAt": "2026-01-26T09:00:00.000Z"
+    },
+    {
+      "id": "p-027",
+      "sku": "HAD-AKS-004",
+      "name": "Paslanmaz Çelik Termos 1 L",
+      "slug": "paslanmaz-celik-termos-1-l",
+      "shortDescription": "Çift cidarlı vakum; çayı 12 saat sıcak tutar.",
+      "description": "Sabahın köründe doldurduğunuz çay, öğlen molasında hâlâ içilir sıcaklıkta olur. Çift cidarlı vakum yapısı dışarı ısı vermez, gövde elde yakmaz. Kapak bardak olarak kullanılır; iç tapa tek elle açılan tiptedir.",
+      "price": 1850,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-05",
+        "name": "Av Aksesuarları",
+        "slug": "av-aksesuarlari"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1711564897156-d2e400597298?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Arazide matarasından su içen sakallı adam"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Hacim",
+          "value": "1 L"
+        },
+        {
+          "label": "Sıcak tutma",
+          "value": "12 saat"
+        },
+        {
+          "label": "Soğuk tutma",
+          "value": "24 saat"
+        },
+        {
+          "label": "Gövde",
+          "value": "18/8 paslanmaz çelik"
+        },
+        {
+          "label": "Kapak",
+          "value": "Bardak olarak kullanılabilir"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "termos",
+        "çelik",
+        "aksesuar"
+      ],
+      "createdAt": "2026-06-05T09:00:00.000Z"
+    },
+    {
+      "id": "p-028",
+      "sku": "HAD-AKS-005",
+      "name": "Kamuflaj Gizlenme Ağı 3 × 2 m",
+      "slug": "kamuflaj-gizlenme-agi-3x2-m",
+      "shortDescription": "Pusu kurmak için hafif, katlanınca avuç içi kadar.",
+      "description": "Ördek pususunda, güvercin kulübesinde veya fotoğraf çekiminde silüeti kıran hafif ağ. Kenarlardaki halkalardan dala veya kazığa bağlanır. Islandığında ağırlaşmaz, katlandığında çantada yer kaplamaz.",
+      "price": 1450,
+      "compareAtPrice": null,
+      "currency": "TRY",
+      "category": {
+        "id": "c-05",
+        "name": "Av Aksesuarları",
+        "slug": "av-aksesuarlari"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1481140717212-b0124736c90a?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Ormanın içinde ilerleyen iki avcı"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Ölçü",
+          "value": "300 × 200 cm"
+        },
+        {
+          "label": "Desen",
+          "value": "Orman / kuru ot"
+        },
+        {
+          "label": "Bağlantı",
+          "value": "Kenarlarda metal halka"
+        },
+        {
+          "label": "Ağırlık",
+          "value": "620 g"
+        },
+        {
+          "label": "Paket",
+          "value": "Taşıma kesesi dahil"
+        }
+      ],
+      "stockStatus": "in_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "kamuflaj",
+        "gizlenme ağı",
+        "pusu"
+      ],
+      "createdAt": "2026-05-13T09:00:00.000Z"
+    },
+    {
+      "id": "p-029",
+      "sku": "HAD-AKS-006",
+      "name": "Yün Astarlı Av Eldiveni",
+      "slug": "yun-astarli-av-eldiveni",
+      "shortDescription": "İşaret parmağı açılabilir — tetiği hissetmeden kalmayın.",
+      "description": "Soğukta el ısınırken tetik hissini kaybetmemek için tasarlandı: başparmak ve işaret parmağı uçları geri katlanıp mıknatısla sabitlenir. Avuç içi süet takviyeli, kavrama sağlamdır. Yün astar terletmeden ısıtır.",
+      "price": 1150,
+      "compareAtPrice": 1400,
+      "currency": "TRY",
+      "category": {
+        "id": "c-05",
+        "name": "Av Aksesuarları",
+        "slug": "av-aksesuarlari"
+      },
+      "brand": {
+        "id": "b-18",
+        "name": "Hasan Av Dünyası",
+        "slug": "hasan-av"
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1585615711517-b22136b2019f?auto=format&fit=crop&w=1400&q=80",
+          "alt": "Kütük üzerinde oturan yeşil gömlekli avcı"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Astar",
+          "value": "Yün karışım"
+        },
+        {
+          "label": "Avuç içi",
+          "value": "Süet takviye"
+        },
+        {
+          "label": "Parmak uçları",
+          "value": "Katlanır, mıknatıslı"
+        },
+        {
+          "label": "Bilek",
+          "value": "Cırt cırt ayarlı"
+        },
+        {
+          "label": "Bedenler",
+          "value": "M – XXL"
+        }
+      ],
+      "stockStatus": "low_stock",
+      "requiresLicense": false,
+      "isFeatured": false,
+      "isNew": false,
+      "tags": [
+        "eldiven",
+        "kışlık",
+        "tetik parmağı"
+      ],
+      "createdAt": "2026-08-07T09:00:00.000Z"
+    }
+  ]
+}
