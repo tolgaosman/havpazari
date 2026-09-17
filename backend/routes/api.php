@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\V1\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\Api\V1\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\Api\V1\Admin\ProductImageController;
 use App\Http\Controllers\Api\V1\Admin\SettingsController as AdminSettingsController;
+use App\Http\Controllers\Api\V1\AuthController;
 use App\Http\Controllers\Api\V1\BrandController;
 use App\Http\Controllers\Api\V1\CategoryController;
 use App\Http\Controllers\Api\V1\ProductController;
@@ -30,14 +31,18 @@ Route::prefix('v1')->group(function () {
     Route::get('settings', [SettingsController::class, 'show']);
 
     // ─────────────────────────────────────────────────────────────────
-    // Admin — yönetim paneli için yazma uç noktaları.
-    //
-    // TODO: auth eklenince burada tek bir middleware satırı yeterli olacak:
-    //   Route::prefix('admin')->middleware(['auth:sanctum', 'role:admin'])->group(...)
-    // Şimdilik panelde kendi oturum çerezi var ama API tarafı açık — backend'e
-    // doğrudan erişim yalnızca geliştirme ortamında güvenlidir.
+    // Admin panel girişi.
     // ─────────────────────────────────────────────────────────────────
-    Route::prefix('admin')->group(function () {
+    Route::post('login', [AuthController::class, 'login'])->middleware('throttle:login');
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::post('logout', [AuthController::class, 'logout']);
+        Route::get('me', [AuthController::class, 'me']);
+    });
+
+    // ─────────────────────────────────────────────────────────────────
+    // Admin — yönetim paneli için yazma uç noktaları.
+    // ─────────────────────────────────────────────────────────────────
+    Route::prefix('admin')->middleware(['auth:sanctum', 'admin'])->group(function () {
         Route::get('dashboard', [DashboardController::class, 'index']);
 
         Route::apiResource('products', AdminProductController::class);

@@ -12,7 +12,6 @@ use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
 /**
  * Marka yönetimi — /api/v1/admin/brands.
- * TODO: auth:sanctum + admin rolü middleware'i eklenecek.
  */
 class BrandController extends Controller
 {

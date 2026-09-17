@@ -9,7 +9,6 @@ import {
   Menu,
   Package,
   Settings,
-  ShoppingBag,
   Tags,
   Trophy,
   X,
@@ -22,7 +21,6 @@ const NAV_ITEMS = [
   { href: "/admin/urunler", label: "Ürünler", icon: Package },
   { href: "/admin/kategoriler", label: "Kategoriler", icon: Tags },
   { href: "/admin/markalar", label: "Markalar", icon: Trophy },
-  { href: "/admin/siparisler", label: "Siparişler", icon: ShoppingBag },
   { href: "/admin/ayarlar", label: "Ayarlar", icon: Settings },
 ];
 

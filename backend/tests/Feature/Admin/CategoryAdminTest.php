@@ -2,16 +2,26 @@
 
 namespace Tests\Feature\Admin;
 
+use App\Enums\UserRole;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
+use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
 class CategoryAdminTest extends TestCase
 {
     use RefreshDatabase;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        Sanctum::actingAs(User::factory()->create(['role' => UserRole::Admin]));
+    }
 
     public function test_store_requires_an_image(): void
     {

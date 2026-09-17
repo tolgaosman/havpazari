@@ -8,6 +8,8 @@ use App\Models\OrderItem;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,13 +19,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // Hasan Bey'in admin girişi — auth eklenince gerçek şifreyle korunacak.
+        // Hasan Bey'in admin girişi. Şifre 'ADMIN_PASSWORD' ile verilir;
+        // tanımlı değilse rastgele üretilip konsola yazılır (yalnızca bu çalıştırmada
+        // görülür, veritabanına düz metin kaydedilmez).
         // E-posta yalnızca giriş amaçlı; site hiçbir yerde bunu göstermez.
+        $adminPassword = env('ADMIN_PASSWORD') ?: Str::random(16);
+
         User::factory()->create([
             'name' => 'Hasan Karabaşak',
             'email' => 'hasankarabasak67@gmail.com',
+            'password' => Hash::make($adminPassword),
             'role' => UserRole::Admin,
         ]);
+
+        if (! env('ADMIN_PASSWORD')) {
+            $this->command?->warn("ADMIN_PASSWORD tanımlı değildi — üretilen şifre: {$adminPassword}");
+        }
 
         $customer = User::factory()->create([
             'name' => 'Test Müşteri',

@@ -12,7 +12,6 @@ use Illuminate\Http\JsonResponse;
 
 /**
  * Panel özet ekranı — /api/v1/admin/dashboard.
- * TODO: auth:sanctum + admin rolü middleware'i eklenecek.
  */
 class DashboardController extends Controller
 {

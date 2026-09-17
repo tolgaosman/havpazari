@@ -8,8 +8,7 @@ class StoreBrandRequest extends \Illuminate\Foundation\Http\FormRequest
 {
     public function authorize(): bool
     {
-        // TODO: auth eklenince admin rolüyle sınırlandırılacak.
-        return true;
+        return $this->user()?->isAdmin() ?? false;
     }
 
     /**

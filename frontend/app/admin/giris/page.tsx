@@ -6,6 +6,7 @@ import { FormMessage } from "@/components/admin/FormMessage";
 import { SubmitButton } from "@/components/admin/SubmitButton";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { ADMIN_EMAIL } from "@/lib/admin/constants";
 import { login, type LoginState } from "@/lib/admin/session";
 
 const initialState: LoginState = {};
@@ -28,8 +29,20 @@ export default function AdminLoginPage() {
 
         <form action={formAction} className="mt-8 flex flex-col gap-5">
           <div>
+            <Label htmlFor="email">E-posta</Label>
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              defaultValue={ADMIN_EMAIL}
+              autoFocus
+              autoComplete="username"
+            />
+          </div>
+
+          <div>
             <Label htmlFor="password">Şifre</Label>
-            <Input id="password" name="password" type="password" autoFocus autoComplete="current-password" />
+            <Input id="password" name="password" type="password" autoComplete="current-password" />
           </div>
 
           <FormMessage>{state.error}</FormMessage>

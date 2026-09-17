@@ -3,13 +3,23 @@
 namespace Tests\Feature\Admin;
 
 use App\Enums\OrderStatus;
+use App\Enums\UserRole;
 use App\Models\Order;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
 class OrderAdminTest extends TestCase
 {
     use RefreshDatabase;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        Sanctum::actingAs(User::factory()->create(['role' => UserRole::Admin]));
+    }
 
     public function test_index_filters_by_status(): void
     {

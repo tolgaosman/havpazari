@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Storage;
 
 /**
  * Kategori yönetimi — /api/v1/admin/categories.
- * TODO: auth:sanctum + admin rolü middleware'i eklenecek.
  */
 class CategoryController extends Controller
 {

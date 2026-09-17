@@ -34,6 +34,11 @@ class User extends Authenticatable
         ];
     }
 
+    public function isAdmin(): bool
+    {
+        return $this->role === UserRole::Admin;
+    }
+
     /** @return HasMany<Order, $this> */
     public function orders(): HasMany
     {

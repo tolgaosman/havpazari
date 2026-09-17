@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Plus } from "lucide-react";
+import { Plus, Pencil, Trash2 } from "lucide-react";
 import { NotConfiguredNotice } from "@/components/admin/NotConfiguredNotice";
 import { PageHeader } from "@/components/admin/PageHeader";
 import { Badge } from "@/components/ui/badge";
@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { AdminApiNotConfiguredError } from "@/lib/admin/api";
 import { getAdminCategories, getAdminProducts } from "@/lib/admin/data";
+import { deleteProduct } from "./actions";
 import { formatPrice, stockPresentation } from "@/lib/format";
 import { cn } from "@/lib/utils";
 
@@ -93,6 +94,7 @@ export default async function AdminProductsPage({ searchParams }: ProductsPagePr
                 <th className="px-4 py-3 font-medium">Fiyat</th>
                 <th className="px-4 py-3 font-medium">Stok</th>
                 <th className="px-4 py-3 font-medium">Durum</th>
+                <th className="px-4 py-3 text-right font-medium">İşlemler</th>
               </tr>
             </thead>
             <tbody>
@@ -116,6 +118,29 @@ export default async function AdminProductsPage({ searchParams }: ProductsPagePr
                         <span className={stock.textClassName}>{stock.label}</span>
                         {product.isFeatured && <Badge variant="brass">Öne Çıkan</Badge>}
                       </span>
+                    </td>
+                    <td className="px-4 py-3 text-right">
+                      <div className="flex items-center justify-end gap-1">
+                        <Button variant="ghost" size="sm" className="h-8 w-8 text-ash hover:text-optic" asChild>
+                          <Link href={`/admin/urunler/${product.id}`} title="Düzenle">
+                            <Pencil className="size-4" />
+                            <span className="sr-only">Düzenle</span>
+                          </Link>
+                        </Button>
+                        <form action={deleteProduct.bind(null, product.id.toString())}>
+                          <Button 
+                            variant="ghost" 
+                            size="sm" 
+                            type="submit" 
+                            className="h-8 w-8 text-stock-out hover:bg-stock-out/10 hover:text-stock-out"
+                            title="Sil"
+                            formAction={deleteProduct.bind(null, product.id.toString())}
+                          >
+                            <Trash2 className="size-4" />
+                            <span className="sr-only">Sil</span>
+                          </Button>
+                        </form>
+                      </div>
                     </td>
                   </tr>
                 );

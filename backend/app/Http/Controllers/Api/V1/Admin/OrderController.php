@@ -13,7 +13,6 @@ use Illuminate\Http\Request;
 /**
  * Sipariş yönetimi — /api/v1/admin/orders. Yalnızca durum/not güncellenir;
  * yeni sipariş oluşturma yok (site sepetsiz, siparişler telefon/WhatsApp'tan).
- * TODO: auth:sanctum + admin rolü middleware'i eklenecek.
  */
 class OrderController extends Controller
 {

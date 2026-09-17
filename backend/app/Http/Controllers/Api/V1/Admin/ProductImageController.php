@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Validator;
 
 /**
  * Ürün görsel yönetimi — yükleme, sıra/alt metin güncelleme, silme.
- * TODO: auth:sanctum + admin rolü middleware'i eklenecek.
  */
 class ProductImageController extends Controller
 {
@@ -21,12 +20,13 @@ class ProductImageController extends Controller
     public function store(Request $request, Product $product): AdminProductResource
     {
         $validated = Validator::make($request->all(), [
-            'images' => ['required', 'array', 'min:1'],
+            'images' => ['required', 'array', 'min:1', 'max:10'],
             'images.*' => ['required', 'image', 'mimes:jpg,jpeg,png,webp', 'max:8192'],
             'alts' => ['array'],
             'alts.*' => ['nullable', 'string', 'max:255'],
         ], [
             'images.required' => 'En az bir görsel seçilmeli.',
+            'images.max' => 'Tek seferde en fazla 10 görsel yüklenebilir.',
             'images.*.image' => 'Yüklenen dosya bir görsel olmalı.',
             'images.*.mimes' => 'Görsel yalnızca jpg, png veya webp olabilir.',
             'images.*.max' => 'Her görsel en fazla 8MB olabilir.',

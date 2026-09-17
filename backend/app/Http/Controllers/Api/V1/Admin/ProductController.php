@@ -13,8 +13,6 @@ use Illuminate\Http\Request;
 
 /**
  * Ürün yönetimi — /api/v1/admin/products.
- *
- * TODO: auth:sanctum + admin rolü middleware'i eklenecek (bkz. routes/api.php).
  */
 class ProductController extends Controller
 {

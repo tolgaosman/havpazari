@@ -1,5 +1,9 @@
 import "server-only";
 
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
+import { ADMIN_SESSION_COOKIE } from "./constants";
+
 /**
  * Admin panelin backend istemcisi — yalnızca Server Actions/Server
  * Components içinde çalışır (`server-only` bunu derleme zamanında zorunlu
@@ -41,8 +45,17 @@ interface AdminFetchOptions {
 async function adminFetch<T>(path: string, options: AdminFetchOptions = {}): Promise<T> {
   if (!API_URL) throw new AdminApiNotConfiguredError();
 
+  const jar = await cookies();
+  const token = jar.get(ADMIN_SESSION_COOKIE)?.value;
+  if (!token) {
+    redirect("/admin/giris");
+  }
+
   const method = options.method ?? "GET";
-  const headers: Record<string, string> = { Accept: "application/json" };
+  const headers: Record<string, string> = {
+    Accept: "application/json",
+    Authorization: `Bearer ${token}`,
+  };
 
   let body: BodyInit | undefined;
   if (options.formData) {
@@ -58,6 +71,12 @@ async function adminFetch<T>(path: string, options: AdminFetchOptions = {}): Pro
     body,
     cache: "no-store",
   });
+
+  if (response.status === 401) {
+    // Token geçersiz/süresi dolmuş — yerel çerezi temizle ve girişe dön.
+    jar.delete(ADMIN_SESSION_COOKIE);
+    redirect("/admin/giris");
+  }
 
   if (response.status === 204) {
     return undefined as T;

@@ -9,7 +9,6 @@ use App\Models\Setting;
 
 /**
  * İşletme bilgilerini günceller — /api/v1/admin/settings.
- * TODO: auth:sanctum + admin rolü middleware'i eklenecek.
  */
 class SettingsController extends Controller
 {

@@ -4,11 +4,8 @@
  * `next/headers` kullanıyor, bunu proxy'nin edge paketine karıştırmamak için.
  */
 
-/** Oturum çerezinin adı. */
+/** Oturum çerezinin adı. Değeri artık backend'den alınan Sanctum token'ıdır. */
 export const ADMIN_SESSION_COOKIE = "had_admin";
 
-/**
- * Admin girişindeki sabit e-posta — kullanıcıdan istenmez, ekranda gösterilmez.
- * Auth (Sanctum) eklenince gerçek kimlik doğrulamayla değişecek.
- */
+/** Giriş formunda e-posta alanının varsayılan değeri (yalnızca kolaylık; girilebilir). */
 export const ADMIN_EMAIL = "hasankarabasak67@gmail.com";
